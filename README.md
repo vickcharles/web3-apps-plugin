@@ -8,7 +8,6 @@
 
 | Server | Purpose |
 |--------|---------|
-| `base-mcp` | Blockchain/Web3 capabilities via Coinbase SDK |
 | `openzeppelin-contracts` | Smart contract references and best practices |
 | `vibe3-mcp` | VIBE3 backend integration (deployment info, preview images) |
 | `playwright` | Headless browser for screenshots and testing |
