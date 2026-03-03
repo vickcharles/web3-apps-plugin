@@ -1,0 +1,5 @@
+{
+  "name": "dwebsite-plugin",
+  "version": "3.0.1",
+  "description": "dWebsite development toolkit with auto-deployment to vibe3.link"
+}

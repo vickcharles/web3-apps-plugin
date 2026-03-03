@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "base-mcp": {
+      "command": "npx",
+      "args": ["-y", "base-mcp"],
+      "env": {
+        "SEED_PHRASE": "${SEED_PHRASE}",
+        "CHAIN_ID": "${CHAIN_ID:-84532}",
+        "COINBASE_API_KEY_NAME": "${COINBASE_API_KEY_NAME:-}",
+        "COINBASE_API_PRIVATE_KEY": "${COINBASE_API_PRIVATE_KEY:-}",
+        "COINBASE_PROJECT_ID": "${COINBASE_PROJECT_ID:-}",
+        "ALCHEMY_API_KEY": "${ALCHEMY_API_KEY:-}"
+      }
+    },
+    "openzeppelin-contracts": {
+      "command": "npx",
+      "args": ["-y", "@openzeppelin/contracts-mcp"]
+    },
+    "vibe3-mcp": {
+      "command": "node",
+      "args": ["/home/user/.claude-plugins/dwebsite-plugin/mcp-servers/vibe3-mcp.js"],
+      "env": {
+        "VIBE3_API_URL": "${VIBE3_API_URL}",
+        "VIBE3_PROJECT_ID": "${VIBE3_PROJECT_ID}",
+        "VIBE3_AUTH_TOKEN": "${VIBE3_AUTH_TOKEN}"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--headless", "--browser", "chromium"]
+    }
+  }
+}
